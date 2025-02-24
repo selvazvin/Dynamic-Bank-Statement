@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: "Inter", serif;
+    background-color: #F5F5F5;
+    
+
+    .navbar__top
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left:150px ;
+        margin-right:150px ;
+        margin-top: 30px;
+        
+    }
+    .navbar__top__image
+    {
+        width: 100px;
+        height: 66px;
+    }
+    .navbar__bottom_container
+    {
+        display: flex;
+        gap: 48px;
+        width: 1350px;
+        align-items: center;
+        justify-content: center;
+        
+                
+    }
+    .navbar__bottom 
+    {
+        background-color: white;
+        width: 100%;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;    
+    }
+    .navbar__bottom_container__accounts, .navbar__bottom_container__summary, .navbar__bottom_container__contat
+    {
+        color: black;
+        text-decoration: none;
+        
+    }
+    .navbar__bottom_container__finance
+    {
+        color: black;
+        font-size: bold;    
+        font-weight: 800;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        text-decoration-style: solid;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 20px
+    }
+    .intractive__icon
+    {
+       width: 78%;
+       display: flex;
+       justify-content: right;
+       margin-top: 20px;
+       margin-bottom: 20px;
+    }
+    .intractive__icon i 
+    {
+        padding-left: 20px;
+    }
+    .perfinance
+    {
+        width: 60%;
+        background-color: white;
+        margin: auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+   .perfinance__tit
+   {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    gap: 20px;
+   }
+   .perfinance__container
+   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   }
+   .perfinance__container__item div
+   {
+     
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 50px;
+     gap: 5px;
+    
+   }
+   .perfinance__container__item h2 
+   {
+    font-size: 16px;
+    color: gray;
+    font-weight: 400;
+   }
+   .perfinance__container__item h3 
+   {
+    font-size: 18px;
+    color: blue;
+    font-weight: 600;
+   }
+   .footer_adv
+   {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .footer_adv img 
+   {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    
+   }
+}
+
+
