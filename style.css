@@ -1,57 +1,58 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body
-{
+
+body {
     font-family: "Inter", serif;
     background-color: #F5F5F5;
-    
 
-    .navbar__top
-    {
+
+    .navbar__top {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left:150px ;
-        margin-right:150px ;
+        margin-left: 150px;
+        margin-right: 150px;
         margin-top: 30px;
-        
+
     }
-    .navbar__top__image
-    {
+
+    .navbar__top__image {
         width: 100px;
         height: 66px;
     }
-    .navbar__bottom_container
-    {
+
+    .navbar__bottom_container {
         display: flex;
         gap: 48px;
         width: 1350px;
         align-items: center;
         justify-content: center;
-        
-                
+
+
     }
-    .navbar__bottom 
-    {
+
+    .navbar__bottom {
         background-color: white;
         width: 100%;
         height: 66px;
         display: flex;
         align-items: center;
-        margin-top: 20px;    
+        margin-top: 20px;
     }
-    .navbar__bottom_container__accounts, .navbar__bottom_container__finance, .navbar__bottom_container__contat
-    {
+
+    .navbar__bottom_container__accounts,
+    .navbar__bottom_container__finance,
+    .navbar__bottom_container__contat {
         color: black;
         text-decoration: none;
-        
+
     }
-    .navbar__bottom_container__summary
-    {
+
+    .navbar__bottom_container__summary {
         color: black;
-        font-size: bold;    
+        font-size: bold;
         font-weight: 800;
         text-decoration-line: underline;
         text-decoration-color: blue;
@@ -59,30 +60,68 @@ body
         text-decoration-thickness: 5px;
         text-underline-offset: 20px
     }
-    .accountsummary__title
-    {
+    .navbar-menu-toggle {
+        display: none;
+    }
+
+    .side-navbar-link {
+        margin-bottom: 30px;
+    }
+    
+    .side-navbar-links a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .side-navbar-links a:hover {
+        text-decoration: underline;
+        color: blue;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .side-navbar {
+        background-color: white;
+        color: black;
+        width: 35%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: -50%;
+        padding: 20px;
+        transition: 1s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 22;
+    }    
+
+    .accountsummary__title {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .acc
-    {
+
+    .acc {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 80px;
     }
-  
-    .acc__saving div, .acc__finance div, .acc__cards div
+    .acc__finance
     {
+        margin-top: -60px;
+    }
+    .acc__saving div,
+    .acc__finance div,
+    .acc__cards div {
         display: flex;
         justify-content: space-between;
-        
-                
+
+
     }
-    .acc__saving__tit,.acc__finance__tit, .acc__cards__tit
-    {
+
+    .acc__saving__tit,
+    .acc__finance__tit,
+    .acc__cards__tit {
         font-size: large;
         font-weight: 500;
         background-color: #CDCDCD;
@@ -93,8 +132,10 @@ body
         border-radius: 20px;
         width: 350px;
     }
-    .acc__saving__data, .acc__finance__data, .acc__cards__data
-    {
+
+    .acc__saving__data,
+    .acc__finance__data,
+    .acc__cards__data {
         background-color: white;
         padding-left: 15px;
         padding-right: 10px;
@@ -102,33 +143,334 @@ body
         padding-bottom: 5px;
         border-radius: 20px;
     }
-    .acc__saving__image
-    {
+
+    .acc__saving__image {
         margin-top: 100px;
+        width: 362px;
+        height: 192px;
     }
-    .acc__saving__image img
-    {
+
+    .acc__saving__image img {
         border-radius: 10px;
     }
-    .acc__cards__tit
-    {
+
+    .acc__cards__tit {
         margin-top: 150px;
-    }    
-    .footer__adve
-    {
+    }
+
+    .footer__adve {
         display: flex;
         justify-content: center;
         margin: auto;
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    .footer__adve img 
-    {
+
+    .footer__adve img {
         width: 1100px;
         height: 300px;
         border-radius: 10px;
         opacity: 0.7;
     }
+
+   
+    /* Media Query */
+
+/* Media Query - 0-576px */
+    @media (min-width:0px) and (max-width: 576px) {
+        .navbar {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            justify-content: space-around;
+
+        }
+
+        .navbar__top {
+
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar__top__image {
+           
+           padding-left: 10px;
+            
+        }
+
+        .navbar__top__text h1,
+        h2 {
+            font-size: 14px;
+        }
+
+        .navbar__top__text p {
+            font-size: 10px;
+        }
+        .navbar__bottom
+        {
+            display: none;
+        }
+        .navbar-menu-toggle {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #979ABB;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 3px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        
+        .accountsummary__title 
+        {
+            font-size: 16px;
+            margin-top: 20px;
+            
+        }
+        .acc {
+           
+           display: flex;
+            gap: 10px;            
+           
+            
+        }
+        .acc__saving__tit,
+    .acc__finance__tit,
+    .acc__cards__tit {
+        font-size: medium;
+        font-weight: 400;
+        margin-top: 30px;
+        width: 350px;
+    }
+    .acc__saving__data,
+    .acc__finance__data,
+    .acc__cards__data {
+        
+        width: 350px;
+    }
+    
+    .acc__saving__image {
+       width: 350px;
+       margin-top: 50px;
+       margin-left: 30px;
+       
+    }
+    .footer__adve img {
+        width: 500px;
+        height: 270px;
+        border-radius: 10px;
+        opacity: 0.7;
+        
+    }
+    .acc__chart
+    {
+        margin-bottom: 0px;
+    }
+    }
+
+    /* Media Query - 577-768px */
+    @media (min-width: 577px) and (max-width: 768px)
+    {
+
+        .navbar {
+            
+            margin-top: 20px;
+            justify-content: space-around;
+
+        }
+        .navbar__top {
+
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar__bottom_container {
+        
+        
+            justify-content: start;
+            margin-left: 30px;
+    
+    
+        }
+        .acc {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  
+                  
+                        
+         }
+         .accountsummary__title
+         {
+            margin-top: 10px;
+         }
+         .acc__saving__tit,
+     .acc__finance__tit,
+     .acc__cards__tit {
+         font-size: medium;
+         font-weight: 600;
+         
+         margin-top: 00px;
+         width: 350px;
+         
+     }
+     .acc__saving__data,
+     .acc__finance__data,
+     .acc__cards__data {
+         
+         width: 350px;
+         
+     }
+     .acc__finance__data, .acc__cards__data
+     {
+        margin-bottom: 50px;
+     }
+     
+     .acc__saving__image {
+        width: 400px;
+        height: 250px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: -50px;      
+                
+     }
+     .footer__adve img {
+         width: 800px;
+         height: 270px;
+         border-radius: 10px;
+         opacity: 0.7;
+         
+     }
+     .acc__chart
+     {
+        height: 100px;
+     }
+     
+     
+    }
+
+
+    /* Media Query - 769-992px */
+    @media (min-width: 769px) and (max-width: 992px)
+    {
+
+        .navbar {
+            
+            margin-top: 20px;
+            justify-content: space-around;
+
+        }
+        .navbar__top {
+
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar__bottom_container {
+        
+        
+            justify-content: start;
+            margin-left: 30px;
+    
+    
+        }
+        
+         .acc
+         {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         .acc__saving__tit,
+     .acc__finance__tit,
+     .acc__cards__tit {
+         font-size: medium;
+         font-weight: 600;
+         
+         margin-top: 0px;
+         width: 450px;
+         
+     }
+     .acc__saving__data,
+     .acc__finance__data,
+     .acc__cards__data {
+         
+         width: 450px;
+         
+     }
+     .acc__finance__data, .acc__cards__data
+     {
+        margin-bottom: 50px;
+     }
+     .acc__saving__image {
+        width: 450px;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+            
+                
+     }
+     .acc__chart
+     {
+        height: 200px;
+        zoom: 2;
+        margin-bottom: -50px;
+     }
+    }
+
+     /* Media Query - 993-1200px */
+     @media (min-width: 993px) and (max-width: 1200px)
+     {
+       
+        .navbar {
+            
+            margin-top: 20px;
+            justify-content: space-around;
+
+        }
+        .navbar__top {
+
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar__bottom_container {
+        
+        
+            justify-content: start;
+            margin-left: 30px;
+    
+    
+        }
+        .acc
+        {
+            gap: 0px;
+        }
+     }
+
+     /* Media Query - 1200px> */
+     @media (min-width: 1201px) 
+     {
+     .accountsummary__title
+     {
+        
+     }
+
+    }
+
+
 }
-
-

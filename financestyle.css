@@ -59,6 +59,38 @@ body
         text-decoration-thickness: 5px;
         text-underline-offset: 20px
     }
+    .navbar-menu-toggle {
+        display: none;
+    }
+
+    .side-navbar-link {
+        margin-bottom: 30px;
+    }
+    
+    .side-navbar-links a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .side-navbar-links a:hover {
+        text-decoration: underline;
+        color: blue;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .side-navbar {
+        background-color: white;
+        color: black;
+        width: 35%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: -50%;
+        padding: 20px;
+        transition: 1s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 22;
+    }
     .intractive__icon
     {
        width: 78%;
@@ -128,6 +160,223 @@ body
     border-radius: 10px;
     
    }
+
+    /* Media Query */
+
+/* Media Query - 576 */
+@media (min-width:0px) and (max-width: 576px) {
+    .navbar {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        justify-content: space-around;
+
+    }
+
+    .navbar__top {
+
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar__top__image {
+       
+       padding-left: 10px;
+        
+    }
+
+    .navbar__top__text h1,
+    h2 {
+        font-size: 14px;
+    }
+
+    .navbar__top__text p {
+        font-size: 10px;
+    }
+    .navbar__bottom
+    {
+        display: none;
+    }
+    .navbar-menu-toggle {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #979ABB;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    /* Finance */
+
+    
+    .perfinance
+    {
+        width: 76%;
+        
+    }
+    .perfinance__tit
+   {
+    
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+   }
+   .perfinance__container
+   {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .perfinance__container__item4
+  {
+    margin-top: -50px;
+    margin-right: 25px;
+    zoom: 0.75;
+  }
+  .footer_adv
+   {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+   }
+   .footer_adv img 
+   {
+    width: 100%;
+    height: 150px;
+    
+    
+   }
+
 }
 
 
+ /* Media Query - 577-768px */
+ @media (min-width: 577px) and (max-width: 768px)
+ {
+
+     .navbar {
+         
+         margin-top: 20px;
+         justify-content: space-around;
+
+     }
+     .navbar__top {
+
+         margin-left: 30px;
+         margin-right: 30px;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+     }
+    
+     .navbar__bottom_container {
+        
+        
+        justify-content: start;
+        margin-left: 30px;
+
+
+    }
+
+    /* Finance */
+
+   
+
+    .perfinance
+    {
+        width: 90%;
+        
+    }
+    .perfinance__container
+    {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     
+   }
+   .perfinance__container__item h2
+   {
+    font-size: 13px;
+   }
+   .perfinance__container__item h3
+   {
+    font-size: 13px;
+   }
+   .perfinance__container__item4
+   {
+     margin-top: -50px;
+     margin-right: 0px;
+     zoom: 0.75;
+   }
+   .footer_adv
+   {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+   }
+   .footer_adv img 
+   {
+    width: 100%;
+    height: 250px;
+    
+    
+   }
+
+ }
+/* Media Query - 769-992px */
+@media (min-width: 769px) and (max-width: 992px)
+{
+  
+   
+    .navbar__top {
+
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__bottom_container {
+        
+        
+        justify-content: start;
+        margin-left: 30px;
+
+
+    }
+   .perfinance
+   {
+       width: 90%;
+       
+   }
+   .footer_adv
+   {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+   }
+   .footer_adv img 
+   {
+    width: 100%;
+    height: 250px;   
+    
+   }
+}
+ 
+
+}

@@ -17,27 +17,52 @@
 </head>
 
 <body>
+    
     <div class="navbar">
         <div class="navbar__top">
+            <div class="navbar-menu-toggle" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i>
+    
+            </div>
             <div class="navbar__top__text">
                 <h1>E-Statement</h1>
                 <h2>Customer Name</h2>
                 <p>Customer No. (CIF No.): XXXXXXX</p>
-                <p>Statement Period:From: DD/MM/YYYY To: DD/MM/YYYY</p>
+                <p>Statement Period:</p> <p>From: DD/MM/YYYY To: DD/MM/YYYY</p> 
             </div>
             <div class="navbar__top__image">
                 <img src="./Image/EDC logo.png" alt="" width="100px" height="66px">
             </div>
+           
         </div>
         <div class="navbar__bottom">
+            
             <div class="navbar__bottom_container">
-                <p><a href="index.html" class="navbar__bottom_container__summary">SUMMARY</a></p>
+                <p ><a href="index.html" class="navbar__bottom_container__summary">SUMMARY</a></p>
                 <p><a href="accounts.html" class="navbar__bottom_container__accounts">ACCOUNTS</a></p>
                 <p><a href="finance.html" class="navbar__bottom_container__finance">FINANCES</a></p>
                 <p><a href="contact.html" class="navbar__bottom_container__contat">CONTACT US</a></p>
             </div>
+            
+        </div>
+      
+    </div>
+
+
+       <!-- sidenavbar -->
+       <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()"><i class="fa-solid fa-xmark"></i></p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">SUMMARY</a></p>
+            <p class="side-navbar-link"><a href="accounts.html">ACCOUNTS</a></p>
+            <p class="side-navbar-link"><a href="finance.html">FINANCES</a></p>
+            <p class="side-navbar-link"><a href="contact.html">CONTACT</a></p>
+            
         </div>
     </div>
+
+
     <div class="acc__title">
         <div>
             <i class="fa-solid fa-square-caret-left fa-2x" style="color: #000000;"></i>
@@ -562,6 +587,8 @@
     </div>
 </div>
 
+
+<script src="accountsscript.js"></script>
 </body>
 
 </html>
